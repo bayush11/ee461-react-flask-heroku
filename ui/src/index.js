@@ -1,11 +1,10 @@
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-function App() {
-  return (
-    <div>
-      This useless app is currently running on <span className="hostName">{window.location.href.split('/')[2]}</span>. AMAZING BRO!
-    </div>
-  );
-}
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
